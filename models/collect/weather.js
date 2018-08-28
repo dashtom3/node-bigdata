@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema;
 
-const adminSchema = new Schema({
+const weatherSchema = new Schema({
 	city: { type: Schema.Types.ObjectId, ref: 'City' },
 	date: String,
 	shidu: String,
@@ -15,9 +15,7 @@ const adminSchema = new Schema({
 	ganmao: String,
 })
 
-adminSchema.index({id: 1});
-
-const Admin = mongoose.model('Admin', adminSchema);
+const Weather = mongoose.model('Weather', weatherSchema);
 
 
-export default Admin
+export default Weather
