@@ -1,16 +1,16 @@
 'use strict';
 
-import pm from './pm.js';
+import price from './Price.js';
 import weather from './weather.js'
 
 class Main{
-    constructor(pm,weather) {
-        this.pm = pm
+    constructor(price, weather) {
+        this.price = price
         this.weather = weather
     }
     startCollect(){
-        // this.pm = new pm()
-        this.weather = new weather()
+        // this.price = new price()
+        // this.weather = new weather()
     }
 
 }
