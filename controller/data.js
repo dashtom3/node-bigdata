@@ -7,7 +7,8 @@ class Data {
 		
     }
     async getPrice(req, res, next) {
-        console.log(req.query)
+        console.log(req,res);
+        // console.log(req.query)
         const {
             name,place,fromDate,toDate
         } = req.query
@@ -25,7 +26,7 @@ class Data {
             }
             
             const result = await PriceModel.find(temp)
-            console.log(result)
+            // console.log(result)
             res.send({
                 status: 1,
                 data: result
